@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt')
 
 const User = require('../models/user')
 
+
 // routes
 router.post('/', (req, res) => {
   const {userName, email, password, confirmPassword} = req.body
@@ -26,5 +27,7 @@ router.post('/', (req, res) => {
     res.json({ error: 'Password does not match!' })
   }
 })
+
+
 
 module.exports = router

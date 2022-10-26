@@ -9,6 +9,16 @@ const Exercise = {
     return db
       .query(sql, [user_email, exercise_id])
       .then(dbRes => dbRes.rows[0])
+  },
+  findByEmail: email => {
+    const sql = `SELECT * FROM plans
+    WHERE user_email = $1`
+    return db
+      .query(sql, [email])
+      .then(dbRes => {
+        // console.log(dbRes.rows)
+        return dbRes.rows
+      })
   }
   
 }

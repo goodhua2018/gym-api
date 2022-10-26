@@ -10655,4 +10655,28 @@ router.post('/', (req, res) => {
   
 })
 
+router.get('/plans/:loggedInEmail', (req, res) => {
+  const email = req.params.loggedInEmail
+  Exercise
+    .findByEmail(email)
+    .then(plans => {
+      console.log(plans.map((item) => item.exercise_id))
+      return plans.map((item) => item.exercise_id)
+    })
+    .then(plans => {
+      let result = []
+      plans.forEach( eachId => {
+        exerciseGifData.forEach((exercise) => {
+          if (eachId == exercise.id) {
+            result.push(exercise)
+          }
+        })
+      })
+      console.log(result)
+      return res.json({result})
+      
+    })
+})
+
+
 module.exports = router
