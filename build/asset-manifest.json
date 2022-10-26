@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c0c8073.css",
+    "main.js": "/static/js/main.687f44b8.js",
+    "static/js/787.375f2d88.chunk.js": "/static/js/787.375f2d88.chunk.js",
+    "static/media/upper_legs.png": "/static/media/upper_legs.6b2b4ba30be5f9c6e493.png",
+    "static/media/chest.png": "/static/media/chest.c561a539e912941cb43f.png",
+    "static/media/waist.png": "/static/media/waist.dd9a8d2498c1e6f52041.png",
+    "static/media/shoulders.png": "/static/media/shoulders.df8b3736c750614492a1.png",
+    "static/media/lower_arms.png": "/static/media/lower_arms.202ca9f337d903b991c6.png",
+    "static/media/upper_arms.png": "/static/media/upper_arms.bcd5598a5b2220d052ee.png",
+    "static/media/back.png": "/static/media/back.71a1123501b8f16d67f9.png",
+    "static/media/lower_legs.png": "/static/media/lower_legs.1b84617c30aeb84adff3.png",
+    "index.html": "/index.html",
+    "main.6c0c8073.css.map": "/static/css/main.6c0c8073.css.map",
+    "main.687f44b8.js.map": "/static/js/main.687f44b8.js.map",
+    "787.375f2d88.chunk.js.map": "/static/js/787.375f2d88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c0c8073.css",
+    "static/js/main.687f44b8.js"
+  ]
+}
