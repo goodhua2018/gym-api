@@ -19,7 +19,13 @@ const Exercise = {
         // console.log(dbRes.rows)
         return dbRes.rows
       })
-  }
+  },
+  delete: exerciseId => {
+    const sql = `
+        DELETE FROM plans WHERE exercise_id = $1    
+    `
+    return db.query(sql, [exerciseId])
+} 
   
 }
 

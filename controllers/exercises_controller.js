@@ -10677,6 +10677,15 @@ router.get('/plans/:loggedInEmail', (req, res) => {
       
     })
 })
+router.delete('/:id', (req, res) => {
+  const exerciseId = req.params.id;
+
+    Exercise
+      .delete(exerciseId)
+      .then(() => res.json({ message: 'delete'}))
+  
+})
+
 
 
 module.exports = router
