@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router()
 
+
 const exerciseGifData = 
 [
   {
@@ -10621,6 +10622,8 @@ const exerciseGifData =
   }
 ]
 
+const Exercise = require('../models/exercise')
+
 router.get('/', (req, res) => {
   // console.log( exerciseGifData)
   return res.json({ exerciseGifData })
@@ -10642,6 +10645,14 @@ router.get('/:bodyPart/bodyPart',(req, res) => {
   const result = exerciseGifData.filter(item => item.bodyPart == bodyPart)
   console.log(result)
   return res.json({ result})
+})
+
+router.post('/', (req, res) => {
+  const {user_email, exercise_id} = req.body
+  Exercise
+    .create(user_email, exercise_id)
+    .then(res => console.log(res))
+  
 })
 
 module.exports = router

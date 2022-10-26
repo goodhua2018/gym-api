@@ -7,3 +7,9 @@ CREATE TABLE users(
   email TEXT,
   password_digest TEXT
 );
+
+CREATE TABLE plans(
+  id SERIAL PRIMARY KEY,
+  user_email TEXT,
+  exercise_id TEXT
+);
