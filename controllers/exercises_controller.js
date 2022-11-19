@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router()
 
 
-const exerciseGifData = require('./exerciseData')
+const exerciseGifData = require('../exerciseData')
 
 const Exercise = require('../models/exercise')
 
